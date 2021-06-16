@@ -27,7 +27,7 @@ const Produto = sequelize.define("produto", {
         }
     },
     preço: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DOUBLE(),
         validate: {
             len: [1, 999999]
